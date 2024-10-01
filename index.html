@@ -46,8 +46,8 @@
 }
 
 
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
+/* .skill-mf .progress {
+  /* background-color: #cde1f8; 
   margin: .5rem 0 1.2rem 0;
   border-radius: 0;
   height: .7rem;
@@ -56,6 +56,57 @@
 .skill-mf .progress .progress-bar {
   height: .7rem;
   background-color: #26bcca;
+} */
+.skill-mf{
+	margin-top: 50px;
+}
+
+.skill-icon i {
+    font-size: 40px; /* Adjust the size as needed */
+    margin-right: 15px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for zoom and color */
+}
+
+.skill-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add some spacing between skill items */
+}
+
+.skill-icon span {
+    font-size: 18px;
+    font-weight: bold;
+	color: white; /* Change skill name color to white */
+    transition: color 0.3s ease;
+}
+.skill-icon span:hover {
+    transform: scale(1.05);
+}
+
+.skill-icon i.fab.fa-java {
+    color: #007396; /* Java blue */
+}
+
+.skill-icon i.fas.fa-code {
+    color: #28a745; /* Green for Web Development */
+}
+
+.skill-icon i.fas.fa-database {
+    color: #f39c12; /* Yellow for Databases */
+}
+
+.skill-icon i.fab.fa-python {
+    color: #3776ab; /* Python blue */
+}
+
+.skill-icon i.fas.fa-cogs {
+    color: #8e44ad; /* Purple for Data Structures and Algorithms */
+}
+
+/* Zoom effect on hover */
+.skill-icon:hover i {
+    transform: scale(1.2); /* Slight zoom effect */
+    color: #000; /* Optional: change the color on hover */
 }
 
 
@@ -143,7 +194,7 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_myphoto.jpeg); margin-left: 500px; margin-top: 90px;">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_myphoto.jpeg); margin-left: 500px; margin-top: 90px; border-radius: 15px;">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -229,34 +280,33 @@
 
 								<div class="skill-mf">
 									<p class="title-s">Skills</p>
-									<span>JAVA</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>WEB DEVELOPMENT</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>DATABASES</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>DATA STRUCTURES AND ALGORITHMS</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
+									<div class="skill-icon">
+        <i class="fab fa-java"></i> <!-- FontAwesome Java Icon -->
+        <span>JAVA</span>
+    </div>
+
+    <!-- Web Development Icon -->
+    <div class="skill-icon">
+        <i class="fas fa-code"></i> <!-- Web Development Icon -->
+        <span>WEB DEVELOPMENT</span>
+    </div>
+
+    <!-- Databases Icon -->
+    <div class="skill-icon">
+        <i class="fas fa-database"></i> <!-- Database Icon -->
+        <span>DATABASES</span>
+    </div>
+
+    <!-- Python Icon -->
+    <div class="skill-icon">
+        <i class="fab fa-python"></i> <!-- Python Icon -->
+        <span>PYTHON</span>
+    </div>
+
+    <!-- Data Structures and Algorithms Icon -->
+    <div class="skill-icon">
+        <i class="fas fa-cogs"></i> <!-- Data Structures Icon -->
+        <span>DATA STRUCTURES AND ALGORITHMS</span>
 									</div>
 								</div>
 							</div>
